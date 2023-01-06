@@ -1,0 +1,115 @@
+
+*{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: 'Lexend Deca' , sans-serif;
+    background-color: hsl(0, 0%, 95%);
+    font-size: 15px}
+
+
+main .container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    width: 900px;
+   
+    display: grid;
+    grid-template-columns: repeat(auto-fill ,minmax(250px , 1fr));
+   border-radius: 50px;
+}
+.card{
+    height: 500px;
+    border-radius: 10px;
+}
+ .card .card-content{
+    padding: 50px;
+
+ }
+ header h1 {
+    font-family: 'Big Shoulders Display', serif;
+     margin-top: 40px;
+     margin-bottom: 40px  ;
+   color:  hsla(0, 0%, 100%, 0.75);
+ }
+
+main .container .card:first-child  {
+    background-color:  hsl(31, 77%, 52%);
+}
+main .container .card:nth-child(2)  {
+  background-color: hsl(184, 100%, 22%);
+}
+
+main .container .card:last-child {
+ background-color:hsl(179, 100%, 13%) ;
+}
+header{
+    font-weight: 700;
+}
+section , footer{
+    font-weight: 400;
+}
+
+section p{
+    margin-bottom: 30px;
+    color: hsla(0, 0%, 100%, 0.75) ;
+}
+
+
+main .card .card-content footer{
+   margin-top: 90px;
+    
+}
+main  .container .card .card-content footer button:hover{
+    color:white ;
+   background-color: transparent;
+    
+}
+main .card .card-content footer button{
+    width: 130px;
+    height: 40px;
+    border: 1px solid white;
+    border-radius: 40px;
+   
+}
+
+main .container .card:first-child footer button  {
+    color:  hsl(31, 77%, 52%);
+}
+main .container .card:nth-child(2) footer button   {
+  color: hsl(184, 100%, 22%);
+}
+
+main .container .card:last-child footer  button  {
+ color:hsl(179, 100%, 13%) ;
+}
+
+
+@media(max-width:375px){
+    main{
+        width: 375px;
+        height: 1500px;
+        
+
+    }
+    main .container{
+        width: 350px;
+        height: 1350px;
+       margin-top: 440px;
+    }
+    .card{
+        height: 450px;
+        width: 350px;
+    }
+}
+
+
+
+
+
+ .attribution { font-size: 11px; text-align: center; }
+ .attribution a { color: hsl(228, 45%, 44%); }
